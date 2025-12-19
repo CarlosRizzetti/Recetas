@@ -1,5 +1,4 @@
-export 
-function normalizar(s) {
+export function normalizar(s) {
   return s
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/\s+/g, " ")
