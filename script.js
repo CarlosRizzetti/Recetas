@@ -16,3 +16,23 @@ categorias.addEventListener("change", function() {
     }
     // Aquí puedes agregar la lógica para filtrar las recetas según la categoría seleccionada
 });
+document.getElementById("excelFile").addEventListener("change", function (e) {
+  const file = e.target.files[0];
+  const reader = new FileReader();
+
+  reader.onload = function (event) {
+    const data = new Uint8Array(event.target.result);
+    const workbook = XLSX.read(data, { type: "array" });
+
+    // Primera hoja
+    const sheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[sheetName];
+
+    // Convertir a JSON
+    const jsonData = XLSX.utils.sheet_to_json(sheet);
+
+    console.log(jsonData);
+  };
+
+  reader.readAsArrayBuffer(file);
+});
