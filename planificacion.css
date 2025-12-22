@@ -20,3 +20,12 @@ main {
     height: 100vh;
    
 }
+#seleccionReceta {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    display: flex;
+}

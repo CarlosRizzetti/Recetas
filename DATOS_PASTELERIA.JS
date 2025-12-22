@@ -43,7 +43,7 @@ export const recetas = [
       { nombre: "HUEVOS", cantidad: 0.005 },
       { nombre: "MARGARINA", cantidad: 0.011 },
       { nombre: "DLECHE REPOSTERO PERGAMINO", cantidad: 0.035 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.0 }
+      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.001 }
     ]
   },
   {
@@ -55,15 +55,15 @@ export const recetas = [
       { nombre: "HUEVOS", cantidad: 0.005 },
       { nombre: "DULCE DE MEMBRILLO", cantidad: 0.035 },
       { nombre: "MARGARINA", cantidad: 0.011 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.0 }
+      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.001 }
     ]
   },
   {
     mercaderia: "CUADRADITOS BROWNIES",
     ingredientes: [
-      { nombre: "LECHE ENTERA", cantidad: 0.009460317 },
-      { nombre: "CHOCOLATE EN BARRA", cantidad: 0.003490727 },
-      { nombre: "CHOCOLATE NESQUIK", cantidad: 0.00750539 },
+      { nombre: "LECHE ENTERA", cantidad: 0.009 },
+      { nombre: "CHOCOLATE EN BARRA", cantidad: 0.003 },
+      { nombre: "CHOCOLATE NESQUIK", cantidad: 0.7},
       { nombre: "AZUCAR SUELTA", cantidad: 0.016 },
       { nombre: "HARINA 0000", cantidad: 0.010 },
       { nombre: "POLVO PARA HORNEAR", cantidad: 0.0 },
@@ -85,7 +85,7 @@ export const recetas = [
       { nombre: "HUEVOS", cantidad: 0.005 },
       { nombre: "DULCE DE BATATA", cantidad: 0.035 },
       { nombre: "MARGARINA", cantidad: 0.011 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.0 }
+      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.001 }
     ]
   },
   {
@@ -99,7 +99,7 @@ export const recetas = [
       { nombre: "MARGARINA", cantidad: 0.009 },
       { nombre: "DLECHE REPOSTERO PERGAMINO", cantidad: 0.026 },
       { nombre: "CREMA DE LECHE POTE FAMILIAR", cantidad: 0.0 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.0 }
+      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.001 }
     ]
   },
   {
@@ -116,24 +116,24 @@ export const recetas = [
       { nombre: "NUEZ PELADA", cantidad: 0.001 },
       { nombre: "PASAS DE UVA RUBIA", cantidad: 0.001 },
       { nombre: "JUGO TANG SABOR MANZANA", cantidad: 0.0 },
-      { nombre: "GELATINA SIN SABOR", cantidad: 0.0 },
-      { nombre: "MAICENA", cantidad: 0.0 }
+      { nombre: "GELATINA SIN SABOR", cantidad: 0.001 },
+      { nombre: "MAICENA", cantidad: 0.001 }
     ]
   },
   {
     mercaderia: "CUADRADITO DE MANZANA",
     ingredientes: [
-      { nombre: "LECHE ENTERA", cantidad: 0.004541407 },
-      { nombre: "CREMA DE LECHE AL 39 %", cantidad: 0.007843915 },
-      { nombre: "AZUCAR SUELTA", cantidad: 0.011619258 },
-      { nombre: "HARINA 0000", cantidad: 0.016321968 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.000489659 },
-      { nombre: "HUEVOS", cantidad: 0.003329682 },
-      { nombre: "MANZANA VERDE", cantidad: 0.023982221 },
-      { nombre: "MARGARINA", cantidad: 0.008160984 },
-      { nombre: "CREMA DE LECHE POTE FAMILIAR", cantidad: 0.007843915 },
-      { nombre: "MAICENA", cantidad: 0.003298843 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 4.01347e-05 }
+      { nombre: "LECHE ENTERA", cantidad: 0.0045 },
+      { nombre: "CREMA DE LECHE AL 39 %", cantidad: 0.0078},
+      { nombre: "AZUCAR SUELTA", cantidad: 0.011 },
+      { nombre: "HARINA 0000", cantidad: 0.016 },
+      { nombre: "POLVO PARA HORNEAR", cantidad: 0.0004 },
+      { nombre: "HUEVOS", cantidad: 0.0033 },
+      { nombre: "MANZANA VERDE", cantidad: 0.023 },
+      { nombre: "MARGARINA", cantidad: 0.0081 },
+      { nombre: "CREMA DE LECHE POTE FAMILIAR", cantidad: 0.007 },
+      { nombre: "MAICENA", cantidad: 0.0032 },
+      { nombre: "ESENCIA DE VAINILLA", cantidad: 4.0 }
     ]
   },
   {

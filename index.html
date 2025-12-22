@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./planificacion.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>Planificación de Recetas</h1>
     </header>
     <main>
-        <section><input type="file" id="excelFile" accept=".xlsx, .xls"></section>
-        <section>
-            <input type="file" id="excelFile" accept=".xlsx, .xls">
-        </section>
-        <section>
-            
-            <label for="">  Seleccione una categoria:</label>
-            <select name="categorias" id="categorias">
-                <option value="todas">Todas</option>
-                <option value="Pasteleria">Pasteleria</option>
-                <option value="Sandwicheria">Sandwicheria</option>
-                <option value="Pastas">Pastas</option>
-                <option value="Flanes">Flanes</option>
+        <section id="seleccionReceta">
+            <section>
+                <label for=""> Seleccione una categoria:</label>
+                <select name="categorias" id="categorias">
+                    <option value="todas">Todas</option>
+                    <option value="Pasteleria">Pasteleria</option>
+                    <option value="Sandwicheria">Sandwicheria</option>
+                    <option value="Pastas">Pastas</option>
+                    <option value="Flanes">Flanes</option>
                 </select>
+            </section>
+            <section>
+                <label for=""> Seleccione una categoria:</label>
+                <select name="productos" id="recetasContainer">
+                    <option value="todas" id="productos">Todas</option>
+                </select>
+            </section>
+            <section>
+                <label for=""> Cantidad</label>
+                <input type="text" id="cantidadReceta" placeholder="Ingrese la cantidad">
+            </section>
+            <button id="calcular">Calcular</button>
         </section>
-            <label for="">  Seleccione una categoria:</label>
-            <select name="productos" id="recetasContainer">
-                <option value="todas" id="productos">Todas</option>
-            </select>
-        </section>
-
-       
-       
+        <p id="cuadradito"></p>
+        <table id="tablaResultado">
+           
+        </table>
     </main>
     <footer>
 
@@ -45,4 +51,5 @@
     <script src="./FUNCIONES.JS" type="module"></script>
     <script src="script.js" type="module"></script>
 </body>
+
 </html>
