@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./planificacion.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-
+        <h1>Planificación de Recetas</h1>
     </header>
     <main>
         <section>
+            <input type="file" id="excelFile" accept=".xlsx, .xls">
+        </section>
+        <section>
+            
             <label for="">  Seleccione una categoria:</label>
             <select name="categorias" id="categorias">
                 <option value="todas">Todas</option>
@@ -18,11 +23,21 @@
                 <option value="Sandwicheria">Sandwicheria</option>
                 <option value="Pastas">Pastas</option>
                 <option value="Flanes">Flanes</option>
+                </select>
         </section>
+            <label for="">  Seleccione una categoria:</label>
+            <select name="productos" id="recetasContainer">
+                <option value="todas" id="productos">Todas</option>
+            </select>
+        </section>
+
+       
+       
     </main>
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
     <script src="./ALIAS.js" type="module"></script>
     <script src="./DATOS_LISTADOS.JS" type="module"></script>
     <script src="./DATOS_PASTELERIA.JS" type="module"></script>
