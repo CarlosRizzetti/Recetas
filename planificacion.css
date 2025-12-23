@@ -29,3 +29,16 @@ main {
     border-radius: 5px;
     display: flex;
 }
+tr,td,th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.contenedorTabla {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+    
+}

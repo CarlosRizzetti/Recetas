@@ -44,7 +44,8 @@ function mostrarRecetas(nombre) {
         recetaBuscada.forEach(receta => {
             receta.ingredientes.forEach(ingrediente => {
                 tablaResultado.innerHTML += `
-                <tr><td>${ingrediente.nombre}</td><td>${Number(ingrediente.cantidad)*Number(cantidadReceta.value)}</td></tr>`;
+                <tr><td class="nombre-ingrediente">${ingrediente.nombre}</td>
+                <td class="cantidad-ingrediente">${Number(ingrediente.cantidad)*Number(cantidadReceta.value*63)}</td></tr>`;
             });
         });
     }
