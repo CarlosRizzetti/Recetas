@@ -8,7 +8,8 @@ const tablaResultado = document.getElementById("tablaResultado");
 const cantidadReceta = document.getElementById("cantidadReceta");
 const calcularBtn = document.getElementById("calcular");
 const cuadradito=document.getElementById("cuadradito");
-const receta=[]
+const tablaProductos=document.getElementById("tablaResultado");
+const recetasSeleccionadas=[];
 let seleccionDeCategoria="";
 let seleccion="";
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,14 +29,12 @@ categorias.addEventListener("change", function() {
     
 });
 containerRecetas.addEventListener("change", function() {
-     seleccion = containerRecetas.value;
-    console.log("Receta seleccionada:", seleccion);
+     seleccion = containerRecetas.value;    
 });
 calcularBtn.addEventListener("click", ()=> {
-    recetas.forEach(receta => {
-        mostrarRecetas(seleccion);
+    agregarArticuloTabla(seleccion,cantidadReceta.value);
 });
-})
+
 function mostrarRecetas(nombre) {
     cuadradito.textContent=`RECETA DE ${nombre}:`;
     const recetaBuscada = recetas.filter(r => r.mercaderia.includes(nombre));   
@@ -49,4 +48,14 @@ function mostrarRecetas(nombre) {
             });
         });
     }
+}
+function agregarArticuloTabla(ingrediente, cantidad) {
+    tablaProductos.innerHTML += `
+    <tr>
+        <td>${ingrediente}</td>
+        <td>${cantidad}</td>
+    </tr>
+    <button class="btn-${ingrediente}">Imprimir</button>
+    `;
+    
 }
