@@ -1,9 +1,9 @@
 import { hojaImpresionContainer, inputCantidadMasa, header, contenedorMain } from "../Logica/CONST.js";
 import { Masa } from "../Logica/MASA.js";
-import { MasaDeChocolate } from "../Logica/MASA_DE_CHOCOLATE.JS";
+import { MasaDeChocolate } from "../Logica/MASA_DE_CHOCOLATE.js";
 import { recetas } from "../Logica/CUADRADITOS.js";
 import { mostrarRecetaDeMasa } from "./FUNCIONES.js";
-import { CuadraditosSeleccionado } from "./FUNCIONES.js";
+import { CuadraditosClase } from "./claseCuadraditos.js";
 
  let cantidadCuadraditos;
 document.addEventListener("DOMContentLoaded", () => {    
@@ -37,46 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
     if (sector === "Cuadraditos") {
-        contenedorMain.innerHTML = '<section id="recetas-lista"></section>';
-        const listaRecetas = document.getElementById("recetas-lista");
-        recetas.forEach(receta => {
-            listaRecetas.innerHTML += `
-            <section class="receta-cuadradito-item">
-                <div class="btn-receta-item">${receta.mercaderia}</div>
-                <input type="number" id="${receta.mercaderia}" placeholder="Cantidad ">
-            </section>
-                `;
-        });
-        contenedorMain.appendChild(hojaImpresionContainer);
-        cantidadCuadraditos = document.querySelectorAll("input[type='number']");       
-        hojaImpresionContainer.innerHTML = '';
-        cantidadCuadraditos.forEach(input => {
-            input.addEventListener("change", (e) => {
-                e.preventDefault();                
-                if (e.target.value === '') {
-                    hojaImpresionContainer.innerHTML = '';
-                    return;
-                } if (e.target.value > 0) {
-                    const cantidad = e.target.value;
-                    const recetaElegida = recetas.find(receta => receta.mercaderia === e.target.id);
-                    hojaImpresionContainer.innerHTML += `  
-                                <section class="descripcion-producto-item">
-                                  <h3>RELLENO PARA CUADRADITOS DE&nbsp ${e.target.id} </h3> &nbsp    <p> ${e.target.value}&nbspUnid </p>
-                                </section> `;
-                    recetaElegida.ingredientes.forEach(ingrediente => {
-                        let ing = ingrediente.cantidad;
-                        let total = Number(ing) * Number(cantidad);
-                        hojaImpresionContainer.innerHTML += `  
-                                                       
-                                <section class="receta-item">
-                                   <label>${ingrediente.nombre}</label> 
-                                   <p>${total.toFixed(2)}</p>
-                                 </section>                
-                                   `;
-                    });
-                }
-            });
-        });
+        const cuadrditos= new CuadraditosClase();
+        cuadrditos.renderCuadraditos();
     }
 });
 
