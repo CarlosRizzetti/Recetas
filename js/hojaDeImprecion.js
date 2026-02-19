@@ -6,8 +6,8 @@ import { mostrarRecetaDeMasa } from "./FUCIONES.js";
 import { BudinClase } from "./BudinClase.js";
 import { MasaClase } from "./MasaClase.js";
 import { MASA_DE_RAVIOLES } from "../JSON/MASA_PARA_PASTAS.js";
-import { MASA_DE_PASCUALINA } from "../JSON/MASA_PARA_PASCUALINAS.js"; 
-import { RellenoDeRavioles } from "./RellenoDeRavioles.js";  
+import { MASA_DE_PASCUALINA } from "../JSON/MASA_PARA_PASCUALINAS.js";
+import { RellenoDeRavioles } from "./RellenoDeRavioles.js";
 import { gelatinas } from "../JSON/GELATINAS.js";
 import { postres } from "../JSON/POSTRES.js";
 import { Flanes } from "./ClaseFlanes.js";
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     <button id="btn-reinicio">Reiniciar</button> 
     <button onclick="window.print()" id="btnImprimir">Imprimir</button> `;
     const btnReiniciar = document.querySelectorAll("button")
-    const btnInicio= document.getElementById("btn-inicio")
-    
+    const btnInicio = document.getElementById("btn-inicio")
+
     if (sector === "Masa") {
         const masa = new MasaClase();
         masa.renderMasa();
@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
         cuadraditos.renderCuadraditos();
 
     }
-        
+
     if (sector === "Budines") {
         const budin = new BudinClase();
         budin.renderBudines();
-       
+
     }
     if (sector === "Masa de Ravioles") {
         const masa = new MasaClase();
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         masa.renderMasaDePascualina();
         mostrarRecetaDeMasa(inputCantidadMasa, MASA_DE_PASCUALINA);
     }
-     if (sector === "Rellenos para pastas") {
+    if (sector === "Rellenos para pastas") {
         const relleno = new RellenoDeRavioles();
         relleno.renderRellenoDeRavioles();
     }

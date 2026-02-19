@@ -117,7 +117,7 @@ h4 {
     justify-content: start ;
     align-items: center;    
     text-align: center;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-family: 'Lora', serif;
     
 }
@@ -135,7 +135,7 @@ h4 {
 .receta-item p { text-align: center; margin: 0; font-weight: 500; border: 1px solid var(--border); }
 label{border: 1px solid var(--border);}
 .procedimiento-item {
-    padding: 15px;
+  
     background: #f9f9f9;
     border-left: 3px solid var(--border);
     margin-top: 5px;

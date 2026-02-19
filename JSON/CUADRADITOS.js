@@ -55,7 +55,7 @@ export const recetas = [
       { nombre: "Esencia de vainilla",bruto: 0.000221, limpio: 0, cocido: 0 }
     ]
       },
-  /* {
+  {
     Mercaderia: "Pie de manzana",
     Hidratacion: [
       { nombre: "Manzana deshidratada",bruto: 0.006762, limpio: 0, cocido: 0 },
@@ -79,7 +79,7 @@ export const recetas = [
       { nombre: "Sorbato",bruto: 0.0196, limpio: 0, cocido: 0 },      
       { nombre: "Nuez pelada",bruto: 0.001017, limpio: 0, cocido: 0 },
     ]
-  }, */
+  },
   {
     Mercaderia: "Manzana",
     Ingredientes: [

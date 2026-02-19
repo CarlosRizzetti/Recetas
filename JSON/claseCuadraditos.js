@@ -1,4 +1,4 @@
-import { recetas } from "../JSON/CUADRADITOS.js";
+import { recetas } from "./CUADRADITOS.js";
 import { contenedorMain, hojaImpresionContainer } from "../JSON/constantes.js";
 
 export class CuadraditosClase {
