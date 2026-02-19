@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Recetas/Estilos/pro.css">
-    <title>Document</title>
+    <title>Recetas | Sabores Caseros</title>
+    <link rel="stylesheet" href="./Estilos/pro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
-    <header>
-        <h1>Recetas</h1>
-    </header>
-    <main>
-        <section id="sector-buttons">
-            <button><a id="Pasteleria" href="../Recetas/Paginas/recetas.html?sector=Pasteleria">Pasteleria</a></button>
-            <button><a id="Pastas" href="../Recetas/Paginas/recetas.html?sector=Pastas">Pastas</a></button>
-            <button><a id="Sandwicheria"
-                    href="../Recetas/Paginas/recetas.html?sector=Sandwicheria">Sandwicheria</a></button>
-            <button><a id="Flanes" href="../Recetas/Paginas/recetas.html?sector=Flanes">Flanes</a></button>
-        </section>
-    </main>
-    <footer>
-    </footer>
-    <script src="../Recetas/Logica/pro.js" type="module"></script>
 
+    <header class="header">
+        <h1>🍽 Recetas</h1>
+        <p>Elegí una categoría y empezá a cocinar</p>
+        
+    </header>
+
+    <main class="main">
+
+        <section id="contenedor-main" class="grid-categorias">
+
+            <article class="card">
+                <button class="btn-categoria" id="Pasteleria">Pastelería</button>
+                <div class="imagen imagen-pasteleria"></div>
+            </article>
+
+            <article class="card">
+                <button class="btn-categoria" id="Pastas">Pastas</button>
+                <div class="imagen imagen-pastas"></div>
+            </article>
+
+            <article class="card">
+                <button class="btn-categoria" id="Sandwicheria">Sandwichería</button>
+                <div class="imagen imagen-sandwicheria"></div>
+            </article>
+
+            <article class="card">
+                <button class="btn-categoria" id="Flanes">Flanes & Postres</button>
+                <div class="imagen imagen-flanes"></div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Recetas - Desarrollado por Carlos</p>
+    </footer>
+
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

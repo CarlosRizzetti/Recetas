@@ -9,6 +9,3 @@ export const header= document.querySelector("header")
 export const contenedorMain= document.querySelector(".contenedor-main")
 
 
-
-
-

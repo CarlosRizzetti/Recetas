@@ -16,15 +16,19 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    background-color: #0d81e0;
+    border: 1px solid #050505;
+    margin-bottom: 1%;
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 main {
     width: 90%;
-    height: 100vh;
     margin: 0 5%; 
-
+    border: 0.5px solid #000;
+    background-color: #e6edf0;
 }
 .contenedor-main {
     width: 100%;
@@ -33,8 +37,10 @@ main {
     flex-direction: column;
     justify-content: start;
     align-items: center;    
-    text-align: center;   
+    text-align: center; 
+    background-color: white;  
 }
+
 #lista-recetas {
     width: 100%;
     height: auto;
@@ -48,12 +54,20 @@ main {
     border-radius: 5px;
 }
 
-p {
+p,h2 {
     width: 30%;
-    height: 100%;
-    font-size: 0.8em;
+    height: 100%;    
     border: 1px solid #000;
     text-align: center;
+    
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 133, 6);
+    color: #fff;
+    font-family: 'Lora', serif;
 }
 
 #titulo-receta {
@@ -80,14 +94,49 @@ p {
 }
 .btn-receta-item{
     width: 100%;
-    height: 7vh;  
+    height: 9vh;  
     margin: 0; 
     border: 1px solid #000;
     background-color: #e0e0e0;   
-    font-size: 0.5em;
+    font-size: 0.9em;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.titulo-procedimiento{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 5px;    
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(69, 133, 6);
+    color: #fff;
+    font-family: 'Lora', serif;
+}
+.procedimiento-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start ;
+    align-items: center;    
+    text-align: center;
+    border-radius: 5px;
+}
+h4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start ;
+    align-items: center;    
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Lora', serif;
+    
 }
 
 label,h3 {
@@ -95,6 +144,15 @@ label,h3 {
     height: 100%;
     border: 1px solid #000;
     align-items: start;
+    font-size: 1em;
+    font-family: 'Lora', serif;
+}
+h3 {
+    background-color: rgb(69, 133, 6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.8em;
 }
 
@@ -130,11 +188,33 @@ input {
     align-items: center;    
     text-align: center;   
 }
-#btnImprimir{
+#btnImprimir,button#btn-reinicio {
     width: 20%;
     height: 50px; 
-    font-size: 1.5em;
-   
+    font-size: 1.2em;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #989b9c;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+button#btn-inicio {
+    width: 20%;
+    height: 50px; 
+    font-size: 1.2em;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #989b9c;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 #hoja-impresion-container{
@@ -167,11 +247,33 @@ input {
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
-    margin-top: 1.5%;
+    margin-top:0;
     font-size: 1em;
     color: #000;    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.titulo-crumble, .titulo-agregados, .titulo-mermelada {
+    width: 70%;
+    height: auto;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+.descripcion-producto-item_cantidad{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    margin-top: 1.5%;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: #000000;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: yellow;
+}
+
 @media print {
     main {
         height: auto;
@@ -191,5 +293,17 @@ input {
         height: auto;
         margin: 0;
         padding: 0;
+    }
+}
+@media screen and (max-width: 968px) {
+   
+    *{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 320px) {
+   
+    *{
+        font-size: 0.5em;
     }
 }
