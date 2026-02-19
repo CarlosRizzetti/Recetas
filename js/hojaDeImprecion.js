@@ -1,6 +1,6 @@
 import { Masa } from "../JSON/MASA.js";
 import { MasaDeChocolate } from "../JSON/MASA_DE_CHOCOLATE.js";
-import { CuadraditosClase } from "./CuadraditosClase.js";
+import { CuadraditosClase } from "../JSON/claseCuadraditos.js";
 import { header } from "../Json/CONST.js";
 import { mostrarRecetaDeMasa } from "./FUCIONES.js";
 import { BudinClase } from "./BudinClase.js";

@@ -1,21 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary: #2c3e50;
+    --accent: #e67e22;
+    --bg: #f4f7f6;
+    --white: #ffffff;
+    --border: #dcdde1;
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--primary);
+    margin: 0;
+    padding: 20px;
 }
 
+/* Header y Botones */
 header {
-    width: 100%;
-    height: 15vh;
-    font-size: 1.2em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD:Estilos/hojaDeImprecion.css
     background-color: #0d81e0;
     border: 1px solid #050505;
     margin-bottom: 1%;
@@ -51,9 +55,25 @@ main {
     display: flex;
     justify-content: start;
     align-items: center;
-    border-radius: 5px;
+=======
+    background: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
+button {
+    padding: 10px 20px;
+    border: none;
+>>>>>>> 5ea17441dc72b00e5f0ed2b9de36b9d8e061fced:Estilos/imprecion.css
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+<<<<<<< HEAD:Estilos/hojaDeImprecion.css
 p,h2 {
     width: 30%;
     height: 100%;    
@@ -68,30 +88,49 @@ h2 {
     background-color: rgb(69, 133, 6);
     color: #fff;
     font-family: 'Lora', serif;
+=======
+#btn-inicio { background: var(--primary); color: white; }
+#btn-reinicio { background: var(--accent); color: white; }
+#btnImprimir { background: #27ae60; color: white; }
+
+button:hover { opacity: 0.8; transform: translateY(-1px); }
+
+/* Lista de Recetas (Inputs) */
+#recetas-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+>>>>>>> 5ea17441dc72b00e5f0ed2b9de36b9d8e061fced:Estilos/imprecion.css
 }
 
-#titulo-receta {
-    width: 100%;
-    height: 10vh;
+.receta-cuadradito-item {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent);
     display: flex;
-    justify-content: center ;
-    align-items: center;
-    border-radius: 5px;    
-    text-align: center;
-    font-size: 2em;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.btn-receta-item { font-weight: bold; font-size: 1.1rem; }
+
+input[type='number'] {
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    outline: none;
 }
-#masa-section-input{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    border-radius: 5px;    
-    text-align: center;
-    font-size: 2em;
-    top: 0;
+
+/* Hoja de Impresión (La Grilla) */
+#hoja-impresion-container {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
+<<<<<<< HEAD:Estilos/hojaDeImprecion.css
 .btn-receta-item{
     width: 100%;
     height: 9vh;  
@@ -101,6 +140,17 @@ h2 {
     font-size: 0.9em;
     display: flex;
     justify-content: center;
+=======
+
+.descripcion-producto-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+>>>>>>> 5ea17441dc72b00e5f0ed2b9de36b9d8e061fced:Estilos/imprecion.css
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -139,6 +189,7 @@ h4 {
     
 }
 
+<<<<<<< HEAD:Estilos/hojaDeImprecion.css
 label,h3 {
     width: 70%;
     height: 100%;
@@ -274,7 +325,47 @@ a{
     background-color: yellow;
 }
 
+=======
+.descripcion-producto-item h3 { margin: 0; font-size: 1rem; }
+.descripcion-producto-item h2 { font-size: 0.8rem; text-align: center; text-transform: uppercase; }
+
+.receta-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.receta-item p { text-align: center; margin: 0; font-weight: 500; border: 1px solid var(--border); }
+label{border: 1px solid var(--border);}
+.procedimiento-item {
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 3px solid var(--border);
+    margin-top: 5px;
+}
+
+/* OPTIMIZACIÓN PARA IMPRESIÓN */
+>>>>>>> 5ea17441dc72b00e5f0ed2b9de36b9d8e061fced:Estilos/imprecion.css
 @media print {
+    header, #recetas-lista, #btn-inicio, #btn-reinicio, #btnImprimir {
+        display: none !important;
+    }
+    
+    body { background: white; padding: 0; }
+    
+    #hoja-impresion-container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .descripcion-producto-item {
+        background: #eee !important;
+        color: black !important;
+        border: 1px solid #000;
+    }
+}
+/* @media print {
     main {
         height: auto;
         min-height: auto ;
@@ -294,6 +385,7 @@ a{
         margin: 0;
         padding: 0;
     }
+<<<<<<< HEAD:Estilos/hojaDeImprecion.css
 }
 @media screen and (max-width: 968px) {
    
@@ -307,3 +399,6 @@ a{
         font-size: 0.5em;
     }
 }
+=======
+} */
+>>>>>>> 5ea17441dc72b00e5f0ed2b9de36b9d8e061fced:Estilos/imprecion.css
