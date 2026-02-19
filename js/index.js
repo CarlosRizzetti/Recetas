@@ -1,5 +1,5 @@
-import { header } from "../Json/CONST.js";
 
+const header = document.querySelector("header");
 const contenedorMain = document.getElementById('contenedor-main');
 const botonesCategoria = document.querySelectorAll('#Pasteleria, #Pastas, #Flanes');
 

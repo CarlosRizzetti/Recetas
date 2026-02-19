@@ -1,5 +1,5 @@
 import { budines } from "../JSON/BUDINES.js";
-import { contenedorMain, hojaImpresionContainer } from "CONST.js";
+import { contenedorMain, hojaImpresionContainer } from "../JSON/constantes.js";
 
 let cantidadCuadraditos;
 

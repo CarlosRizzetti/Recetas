@@ -1,6 +1,6 @@
 
 import { flanesReceta } from "../JSON/FLANES.js";
-import { contenedorMain, hojaImpresionContainer } from "..Json/CONST.js";
+import { contenedorMain, hojaImpresionContainer } from "../JSON/constantes.js";
 export class Flanes {
     constructor() { }
 

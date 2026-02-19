@@ -1,5 +1,5 @@
-import { recetas } from "../Logica/CUADRADITOS.js";
-import { contenedorMain, hojaImpresionContainer } from "../Json/CONST.js";
+import { recetas } from "../JSON/CUADRADITOS.js";
+import { contenedorMain, hojaImpresionContainer } from "../JSON/constantes.js";
 
 export class CuadraditosClase {
     renderCuadraditos() {

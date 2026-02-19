@@ -1,5 +1,6 @@
+import { recetas } from "../JSON/CUADRADITOS.js";
+import { contenedorMain, hojaImpresionContainer } from "../JSON/constantes.js";
 
-import { hojaImpresionContainer } from "CONST.js";
 
 export function mostrarRecetaDeMasa(cantidad, MasaSeleccionada) {
     cantidad.addEventListener("input", (e) => {

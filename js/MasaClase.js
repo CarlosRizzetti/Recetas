@@ -1,6 +1,6 @@
 import { Masa } from "../JSON/MASA.js";
 import { MasaDeChocolate } from "../JSON/MASA_DE_CHOCOLATE.js";
-import { hojaImpresionContainer } from "..Json/CONST.js";
+import { hojaImpresionContainer } from "../JSON/constantes.js";
 import { MASA_DE_PASCUALINA } from "../JSON/MASA_PARA_PASCUALINAS.js";
 import { MASA_DE_RAVIOLES } from "../JSON/MASA_PARA_PASTAS.js";
 

@@ -1,4 +1,4 @@
-import { contenedorMain, hojaImpresionContainer } from "..Json/CONST.js";
+import { contenedorMain, hojaImpresionContainer } from "../JSON/constantes.js";
 import { rellenosParaPastas } from "../JSON/RELLENO_PARA_PASTAS.js";
 
 let cantidadRavioles;
