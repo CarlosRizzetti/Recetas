@@ -16,18 +16,18 @@ export const recetas = [
   {
     Mercaderia: "Brownie",
     Ingredientes: [
-      { nombre: "Leche",bruto: 0.009, limpio: 0, cocido: 0 },
-      { nombre: "Chocolate en barra",bruto: 0.003, limpio: 0, cocido: 0 },
-      { nombre: "Nesquik",bruto: 0.7, limpio: 0, cocido: 0 },
-      { nombre: "Azucar",bruto: 0.016, limpio: 0, cocido: 0 },
-      { nombre: "Harina 0000",bruto: 0.010, limpio: 0, cocido: 0 },
-      { nombre: "Polvo de hornear",bruto: 0.0, limpio: 0, cocido: 0 },
-      { nombre: "huevos",bruto: 0.006, limpio: 0, cocido: 0 },
-      { nombre: "Margarina",bruto: 0.006, limpio: 0, cocido: 0 },
-      { nombre: "Nuez pelada",bruto: 0.003, limpio: 0, cocido: 0 },      
-      { nombre: "Aceite de girasol",bruto: 0.003, limpio: 0, cocido: 0 },
-      { nombre: "Esencia de vainilla",bruto: 0.001, limpio: 0, cocido: 0 },
-      { nombre: "Sal fina",bruto: 0.0, limpio: 0, cocido: 0 }
+      { nombre: "Leche",bruto: 0.0094, limpio: 0, cocido: 0 },
+      { nombre: "Chocolate en barra",bruto: 0.0035, limpio: 0, cocido: 0 },
+      { nombre: "Nesquik",bruto: 0.0075, limpio: 0, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.0156, limpio: 0, cocido: 0 },
+      { nombre: "Harina 0000",bruto: 0.0104, limpio: 0, cocido: 0 },
+      { nombre: "Polvo de hornear",bruto: 0.0003, limpio: 0, cocido: 0 },
+      { nombre: "huevos",bruto: 0.0056, limpio: 0, cocido: 0 },
+      { nombre: "Margarina",bruto: 0.0056, limpio: 0, cocido: 0 },
+      { nombre: "Nuez pelada",bruto: 0.0034, limpio: 0, cocido: 0 },      
+      { nombre: "Aceite de girasol",bruto: 0.0035, limpio: 0, cocido: 0 },
+      { nombre: "Esencia de vainilla",bruto: 0.0006, limpio: 0, cocido: 0 },
+      { nombre: "Sal fina",bruto: 0.0001, limpio: 0, cocido: 0 }
     ],
     Procedimiento: [
       { nombre: "1) Derretir el chocolate, la margarina y el aceite a baño maría." },
@@ -56,30 +56,36 @@ export const recetas = [
     ]
       },
   {
-    Mercaderia: "Pie de manzana",
-    Hidratacion: [
-      { nombre: "Manzana deshidratada",bruto: 0.006762, limpio: 0, cocido: 0 },
-      { nombre: "Agua",bruto: 0.01986, limpio: 0, cocido: 0 },
-    ],
-    Jugo: [
-      { nombre: "Jugo de manzana",bruto: 0.0002286, limpio: 0, cocido: 0 },
-      { nombre: "Agua",bruto: 0.0049, limpio: 0, cocido: 0 },
-      { nombre: "Oporto",bruto: 0.00098, limpio: 0, cocido: 0 },
-      { nombre: "Esencia de vainilla",bruto: 0.0001633, limpio: 0, cocido: 0 },
-    ],
-    Maicena: [
-      { nombre: "Maicena",bruto: 0.0004050, limpio: 0, cocido: 0 },
-      { nombre: "Agua",bruto: 0.001084, limpio: 0, cocido: 0 },
-    ],
-    Unificar: [
-      { nombre: "Azucar",bruto: 0.01667, limpio: 0, cocido: 0 },
-      { nombre: "Agua",bruto: 0.007, limpio: 0, cocido: 0 },
-      { nombre: "Gelatina 250 Bloom",bruto: 0.001, limpio: 0, cocido: 0 },
-      { nombre: "Pasas de uva rubias",bruto: 0.001006, limpio: 0, cocido: 0 },
-      { nombre: "Sorbato",bruto: 0.0196, limpio: 0, cocido: 0 },      
-      { nombre: "Nuez pelada",bruto: 0.001017, limpio: 0, cocido: 0 },
-    ]
-  },
+  Mercaderia: "Pie de Manzana",
+  Ingredientes: [
+    { nombre: "Manzana Deshidratada", bruto: 0.006762, limpio: 0, cocido: 0 },
+    { nombre: "Agua hirviendo", bruto: 0.019861, limpio: 0, cocido: 0 },
+    { nombre: "Polvo de Jugo de Manzana", bruto: 0.000229, limpio: 0, cocido: 0 },
+    { nombre: "Agua (para jugo)", bruto: 0.0049, limpio: 0, cocido: 0},
+    { nombre: "Oporto", bruto: 0.00098, limpio: 0, cocido: 0 },
+    { nombre: "Esencia de vainilla", bruto: 0.000163, limpio: 0, cocido: 0 },
+    { nombre: "Maizena", bruto: 0.000405, limpio: 0.0, cocido: 0},
+    { nombre: "Agua (para maizena)", bruto: 0.001085, limpio: 0, cocido: 0 },
+    { nombre: "Azucar", bruto: 0.016673, limpio: 0, cocido: 0 },
+    { nombre: "Agua (para caramelo)", bruto: 0.001633, limpio: 0, cocido: 0.000 },
+    { nombre: "Gelatina250 bloom", bruto: 0.000327, limpio: 0, cocido: 0 },
+    { nombre: "Pasas de uva Rubias", bruto: 0.001006, limpio:0, cocido: 0 },
+    { nombre: "Sorbato", bruto: 0.0196, limpio: 0, cocido: 0.00 }, // 12.3 gr convertido a kg
+    { nombre: "Nuez pelada", bruto: 0.001018, limpio: 0, cocido: 0 }
+  ],
+  Procedimiento: [
+    { nombre: "1) Hidratar la manzana con el agua hirviendo (92%)." },
+    { nombre: "2) Preparar el jugo mezclando el polvo Tang, agua, oporto y esencia de vainilla." },
+    { nombre: "3) Hidratar la maizena con el agua correspondiente." },
+    { nombre: "4) Calentar el azúcar y agua hasta formar un Caramelo color Ámbar." },
+    { nombre: "5) Sobre el Caramelo, incorporar la manzana hidratada y el jugo preparado." },
+    { nombre: "6) Hervir durante 15 minutos." },
+    { nombre: "7) Incorporar la maizena preparada, la gelatina, las pasas y el sorbato." },
+    { nombre: "8) Hervir otros 4 minutos, revolviendo, y apagar el fuego." },
+    { nombre: "9) Pasar a bacha o placa e incorporar la nuez pelada." },
+    { nombre: "10) Enfriar en placa hasta obtener el Relleno BASE FRÍO." }
+  ]
+},
   {
     Mercaderia: "Manzana",
     Ingredientes: [
