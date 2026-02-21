@@ -12,6 +12,7 @@ import { gelatinas } from "../JSON/GELATINAS.js";
 import { postres } from "../JSON/POSTRES.js";
 import { Flanes } from "./ClaseFlanes.js";
 import { flanesReceta } from "../JSON/FLANES.js";
+import { ClaseSandwicheria } from "./ClaseSandwicheria.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -73,6 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sector === "Postres") {
         const postre = new Flanes();
         postre.renderFlanes(postres);
+    }
+    if (sector === "Combos") {
+        const combo = new ClaseSandwicheria();
+        combo.renderSandwiches();
     }
     btnReiniciar.forEach(element => {
         element.addEventListener("click", (e) => {

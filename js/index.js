@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 const contenedorMain = document.getElementById('contenedor-main');
-const botonesCategoria = document.querySelectorAll('#Pasteleria, #Pastas, #Flanes');
+const botonesCategoria = document.querySelectorAll('#Pasteleria, #Pastas, #Flanes,#Sandwicheria');
 
 const recetas = {
     Pasteleria: [
@@ -18,7 +18,12 @@ const recetas = {
         { nombre: "Flanes", sector: "Flanes" },
         { nombre: "Gelatinas", sector: "Gelatinas" },
         { nombre: "Postres", sector: "Postres" }
+    ],
+    Sandwicheria: [
+        { nombre: "Combos", sector: "Combos" },
+        
     ]
+
 };
 
 botonesCategoria.forEach(boton => {
