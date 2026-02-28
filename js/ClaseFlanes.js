@@ -9,7 +9,7 @@ export class Flanes {
         const listaRecetas = document.getElementById("recetas-lista");
         postres.forEach(postre => {
             listaRecetas.innerHTML += `
-                    <section class="receta-${postre.nombre}-item">
+                    <section class="receta-cuadradito-item">
                         <div class="btn-receta-item">${postre.nombre}</div>
                         <input type="number" id="${postre.nombre}" placeholder="Cantidad ">
                     </section>
