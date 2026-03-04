@@ -37,23 +37,25 @@ export class CuadraditosClase {
             if (!receta) return;
 
             // Renderizado modular de secciones
-            hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Relleno de ${receta.Mercaderia}`, receta.Ingredientes, cantidad);
+            hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Relleno de ${receta.Mercaderia}`, receta.Ingredientes, cantidad*receta.Unidades);
             
             if (receta.Crumble) 
-                hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Crumble de ${receta.Mercaderia}`, receta.Crumble, cantidad);
+                hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Crumble de ${receta.Mercaderia}`, receta.Crumble, cantidad*receta.Unidades);
             
             if (receta.Pastelera) 
-                hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Pastelera de ${receta.Mercaderia}`, receta.Pastelera, cantidad);
+                hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Pastelera de ${receta.Mercaderia}`, receta.Pastelera, cantidad*receta.Unidades);
             
             if (receta.Procedimiento) 
                 hojaImpresionContainer.innerHTML += this.crearSeccionProcedimiento(receta.Mercaderia, receta.Procedimiento);
+            
         });
     }
 
     // 4. Helper: Generador de tablas de ingredientes (DRY - Don't Repeat Yourself)
     crearSeccionIngredientes(titulo, lista, cantidad) {
         const filas = lista.map(ing => {
-            const total = Number(ing.bruto) * cantidad;
+           
+            const total = Number(ing.bruto) * (cantidad)
             return `
                 <section class="receta-item">
                     <label>${ing.nombre}</label> 
