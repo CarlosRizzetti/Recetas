@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <button onclick="window.print()" id="btnImprimir">Imprimir</button> `;
     const btnReiniciar = document.querySelectorAll("button")
     const btnInicio = document.getElementById("btn-inicio")
-
+    const inputCantidadMasa = document.querySelector("input[type='number']");
     if (sector === "Masa") {
         const masa = new MasaClase();
         masa.renderMasa();
