@@ -1,5 +1,5 @@
 :root {
-    --primary: #2c3e50;
+    --primary: #aacff4;
     --accent: #e67e22;
     --bg: #f4f7f6;
     --white: #ffffff;
@@ -120,6 +120,9 @@ h4 {
     font-size: 0.8em;
     font-family: 'Lora', serif;
     
+}
+a{
+    text-decoration: none;
 }
 
 .descripcion-producto-item h3 { margin: 0; font-size: 1rem; }

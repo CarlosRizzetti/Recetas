@@ -26,7 +26,17 @@ body {
     font-size: 1.1rem;
     color: #666;
 }
-
+button {
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#btn-reinicio { background: #ff6b6b; color: white;
+margin-top: 10px; }
 
 /* GRID */
 
@@ -95,6 +105,7 @@ body {
 .btn-categoria:hover {
     background: #ff6b6b;
 }
+
 
 /* FOOTER */
 
