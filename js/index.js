@@ -41,7 +41,7 @@ function renderSubcategorias(categoria) {
             ${lista.map(item => `
                 <a class="sub-btn" 
                    href="hojaDeImpresion.html?sector=${encodeURIComponent(item.sector)}" 
-                   target="_blank">
+                   >
                    ${item.nombre}
                 </a>
             `).join('')}

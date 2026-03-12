@@ -48,6 +48,20 @@ button:hover { opacity: 0.8; transform: translateY(-1px); }
     gap: 15px;
     margin-bottom: 30px;
 }
+#masa-section-input{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;    
+    text-align: center;
+    font-size: 1.5em;
+    top: 0;
+}
+#masa_cantidad_label{
+    background-color: rgb(196, 237, 155);
+}
 
 .receta-cuadradito-item {
     background: var(--white);
@@ -71,9 +85,10 @@ input[type='number'] {
 /* Hoja de Impresión (La Grilla) */
 #hoja-impresion-container {
     background: var(--white);
-    padding: 30px;
+    padding:0 10% 0 10%;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    
 }
 
 .descripcion-producto-item {
@@ -131,7 +146,7 @@ a{
 .receta-item {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    padding: 10px;
+    
     border-bottom: 1px solid var(--border);
 }
 
