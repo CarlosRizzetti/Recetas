@@ -61,6 +61,15 @@ button:hover { opacity: 0.8; transform: translateY(-1px); }
 }
 #masa_cantidad_label{
     background-color: rgb(196, 237, 155);
+    font-size: 0.7em;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#masaCantidad{
+    background-color: lightyellow;
+    color: black;
+    text-align: center;
 }
 
 .receta-cuadradito-item {
@@ -93,7 +102,7 @@ input[type='number'] {
 
 .descripcion-producto-item {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background: var(--primary);
     color: white;
     padding: 10px;
@@ -102,6 +111,11 @@ input[type='number'] {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+#cantidad-producto-item{
+    background-color: lightyellow;
+    color: black;
+    text-align: center;
 }
 .titulo-procedimiento{
     width: 100%;

@@ -31,7 +31,7 @@ export class RellenoDeRavioles {
                     let verduras = recetaElegida.verduras;
                     hojaImpresionContainer.innerHTML += `  
                                                 <section class="descripcion-producto-item">
-                                                  <h3>Relleno para ravioles de ${e.target.id} </h3><p>Bruto</p><p>Limpio</p><p>Cocido</p>
+                                                  <h3> ${e.target.id}</h3><h3 id="cantidad-producto-item">${cantidad} Kg</h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
                                                 </section> `;
                     recetaElegida.ingredientes.forEach(ingrediente => {
                         let bruto = ingrediente.bruto;

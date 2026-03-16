@@ -7,7 +7,7 @@ export function mostrarRecetaDeMasa(cantidad, MasaSeleccionada) {
         e.preventDefault();        
         hojaImpresionContainer.innerHTML = `
         <section class="descripcion-producto-item">
-           <label>Cantidad de masa </label><p> ${e.target.value} Kilos</p>
+           <h3>Cantidad de masa </h3><h3 id="cantidad-producto-item">${e.target.value} Kilos</h3>
         </section>`;
             MasaSeleccionada.forEach(ingrediente => {
             const cantidad = e.target.value;

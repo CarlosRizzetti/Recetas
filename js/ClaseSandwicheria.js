@@ -37,7 +37,7 @@ export class ClaseSandwicheria {
             if (!receta) return;
 
             // Renderizado modular de secciones
-            hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Relleno de ${receta.Mercaderia}`, receta.Ingredientes, cantidad);
+            hojaImpresionContainer.innerHTML += this.crearSeccionIngredientes(`Combo de ${receta.Mercaderia}`, receta.Ingredientes, cantidad);
             
           
         });
@@ -58,7 +58,7 @@ export class ClaseSandwicheria {
 
         return `
             <section class="descripcion-producto-item">
-                <h3>${titulo}</h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
+                <h3>${titulo}</h3><h3 id="cantidad-producto-item">${cantidad} Unid</h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
             </section>
             ${filas}`;
     }
