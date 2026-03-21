@@ -67,7 +67,7 @@ export class CuadraditosClase {
 
         return `
             <section class="descripcion-producto-item">
-                <h3>${titulo}</h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
+                <h3>${titulo}</h3><h3></h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
             </section>
             ${filas}`;
     }
