@@ -19,7 +19,7 @@ export class RellenoDeRavioles {
         cantidadRavioles = document.querySelectorAll("input[type='number']");
         hojaImpresionContainer.innerHTML = '';
         cantidadRavioles.forEach(input => {
-            input.addEventListener("change", (e) => {
+            input.addEventListener("change", (e) => {                
                 e.preventDefault();
                 if (e.target.value === '') {
                     hojaImpresionContainer.innerHTML = '';
@@ -38,12 +38,16 @@ export class RellenoDeRavioles {
                         let limpio = ingrediente.limpio;
                         let cocido = ingrediente.cocido;
                         let total = Number(bruto) * Number(cantidad);
+                          if (ingrediente.nombre==="Conservante (Benzoato+Sorbato) 1g x kg relleno"|| ingrediente.nombre==="Nuez moscada" ||
+                             ingrediente.nombre==="Pimienta blanca" ) {
+                                total = Number(bruto) * (Number(cantidad) / 1000);
+                            }
                         hojaImpresionContainer.innerHTML += `                                                                      
                                                 <section class="receta-item">
                                                    <label>${ingrediente.nombre}</label> 
-                                                   <p>${total.toFixed(2)}</p>
-                                                    <p>${(total - (total * ingrediente.limpio)).toFixed(2)}</p>
-                                                    <p>${(total * ingrediente.cocido).toFixed(2)}</p>
+                                                   <p>${total.toFixed(3)} Kg</p>
+                                                    <p>${(total - (total * ingrediente.limpio)).toFixed(3)} Kg</p>
+                                                    <p>${(total * ingrediente.cocido).toFixed(3)} Kg</p>
                                                  </section>                
                                                    `;
                     });
@@ -60,9 +64,9 @@ export class RellenoDeRavioles {
                             hojaImpresionContainer.innerHTML += `                                                                      
                                                     <section class="receta-item">
                                                        <label>${ingrediente.nombre}</label> 
-                                                       <p>${total.toFixed(2)}</p>
-                                                        <p>${(total - (total * ingrediente.limpio)).toFixed(2)}</p>
-                                                        <p>${(total * ingrediente.cocido).toFixed(2)}</p>
+                                                       <p>${total.toFixed(3)} Kg</p>
+                                                        <p>${(total - (total * ingrediente.limpio)).toFixed(3)} Kg</p>
+                                                        <p>${(total * ingrediente.cocido).toFixed(3 )} Kg </p>
                                                      </section>                
                                                        `;
                         });
@@ -77,12 +81,13 @@ export class RellenoDeRavioles {
                             let limpio = ingrediente.limpio;
                             let cocido = ingrediente.cocido;
                             let total = Number(bruto) * Number(cantidad);
+                          
                             hojaImpresionContainer.innerHTML += `                                                                      
                                                     <section class="receta-item">
                                                        <label>${ingrediente.nombre}</label> 
-                                                       <p>${total.toFixed(2)}</p>
-                                                        <p>${(total - (total * ingrediente.limpio)).toFixed(2)}</p>
-                                                        <p>${(total * ingrediente.cocido).toFixed(2)}</p>
+                                                       <p>${total.toFixed(3)}</p>
+                                                        <p>${(total - (total * ingrediente.limpio)).toFixed(3)}</p>
+                                                        <p>${(total * ingrediente.cocido).toFixed(3)}</p>
                                                      </section>                
                                                        `;
                         });
