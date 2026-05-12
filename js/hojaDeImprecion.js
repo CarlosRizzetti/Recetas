@@ -13,6 +13,7 @@ import { postres } from "../JSON/POSTRES.js";
 import { Flanes } from "./ClaseFlanes.js";
 import { flanesReceta } from "../JSON/FLANES.js";
 import { ClaseSandwicheria } from "./ClaseSandwicheria.js";
+import { ClaseMercadoLibre } from "./ClaseMercadoLibre.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -78,6 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sector === "Combos") {
         const combo = new ClaseSandwicheria();
         combo.renderSandwiches();
+    }
+     if (sector === "Mercado libre") {
+        const combo = new ClaseMercadoLibre();
+        combo.renderMercadoLibre();
     }
     btnReiniciar.forEach(element => {
         element.addEventListener("click", (e) => {

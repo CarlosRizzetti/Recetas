@@ -21,6 +21,7 @@ const recetas = {
     ],
     Sandwicheria: [
         { nombre: "Combos", sector: "Combos" },
+        { nombre: "Mercado libre", sector: "Mercado libre" },
         
     ]
 
