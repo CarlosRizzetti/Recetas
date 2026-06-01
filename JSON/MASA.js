@@ -4,6 +4,6 @@ export const Masa = [
   { nombre: 'Margarina',          cantidad: 0.23605824 },
   { nombre: 'Azucar',             cantidad: 0.14083020 },
   { nombre: 'Polvo de Hornear',   cantidad: 0.01408302 },
-  { nombre: 'Esencia Vainilla',   cantidad: 0.00245894 },
-  { nombre: 'Conservantes', cantidad: 0.0312956 }
+  { nombre: 'Esencia Vainilla',   cantidad: 0.0011 },
+  
 ];
