@@ -118,7 +118,7 @@ export const recetasSandwiches = [
       { nombre: "QUESO CHEDDAR FETEADO", bruto: 1, limpio: 0, cocido: 0 },
       { nombre: "REPOLLO BLANCO", bruto: 0.031, limpio: 0, cocido: 0 },
       { nombre: "TOMATES PERITA", bruto: 0.032, limpio: 0, cocido: 0 },
-      { nombre: "	PAPEL DE SEDA PARAFINADO A CUADROS", bruto: 0.002, limpio: 0, cocido: 0 },
+      { nombre: "	PAPEL DE SEDA PARAFINADO A CUADROS", bruto: 1, limpio: 0, cocido: 0 },
     ]
   },
   {
@@ -135,7 +135,7 @@ export const recetasSandwiches = [
       { nombre: "REPOLLO BLANCO", bruto: 0.031, limpio: 0, cocido: 0 },
       { nombre: "TOMATES PERITA", bruto: 0.032, limpio: 0, cocido: 0 },
       { nombre: "	YOGUR NATURAL X KG", bruto: 0.002, limpio: 0, cocido: 0 },
-      { nombre: "	PAPEL DE SEDA PARAFINADO A CUADROS", bruto: 0.002, limpio: 0, cocido: 0 },
+      { nombre: "	PAPEL DE SEDA PARAFINADO A CUADROS", bruto: 1, limpio: 0, cocido: 0 },
 
 
     ]
