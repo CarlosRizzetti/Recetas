@@ -105,5 +105,22 @@ export const recetasSandwiches = [
       { nombre: "El papel Sulfito Individual", bruto: 1.000, limpio: 0, cocido: 0 }
     ]
   },
+  {
+    Mercaderia: "Sandw. Burger Mc ALVAREZ ",
+    Ingredientes: [      
+      { nombre: "AJO", bruto: 0.010, limpio: 0, cocido: 0 },
+      { nombre: "BARBACOA", bruto: 0.028, limpio: 0, cocido: 0 },
+      { nombre: "CEBOLLA", bruto: 0.058, limpio: 0, cocido: 0 },
+      { nombre: "CHORIZO COLORADO", bruto: 0.003, limpio: 0, cocido: 0 },
+      { nombre: "HAMBURGUESA 69 GRS", bruto: 2.060, limpio: 0, cocido: 0 },
+      { nombre: "MAIZENA", bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "MIEL", bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "PAN PARA HAMBURGUESAS BIMBO", bruto: 1.03, limpio: 0, cocido: 0 },
+      { nombre: "PANCETA AHUMADA", bruto: 0.003, limpio: 0, cocido: 0 },      
+      { nombre: "QUESO CHEDDAR FETEADO", bruto: 0.024, limpio: 0, cocido: 0 },
+      { nombre: "REPOLLO BLANCO", bruto: 0.031, limpio: 0, cocido: 0 },
+      { nombre: "TOMATES PERITA", bruto: 0.032, limpio: 0, cocido: 0 },
+    ]
+  },
  
 ];
