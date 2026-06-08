@@ -115,9 +115,29 @@ export const recetasSandwiches = [
       { nombre: "HAMBURGUESA 69 GRS", bruto: 2, limpio: 0, cocido: 0 },      
       { nombre: "PAN PARA HAMBURGUESAS BIMBO", bruto: 1, limpio: 0, cocido: 0 },
       { nombre: "PANCETA AHUMADA", bruto: 0.003, limpio: 0, cocido: 0 },      
-      { nombre: "QUESO CHEDDAR FETEADO", bruto: 0.024, limpio: 0, cocido: 0 },
+      { nombre: "QUESO CHEDDAR FETEADO", bruto: 1, limpio: 0, cocido: 0 },
       { nombre: "REPOLLO BLANCO", bruto: 0.031, limpio: 0, cocido: 0 },
       { nombre: "TOMATES PERITA", bruto: 0.032, limpio: 0, cocido: 0 },
+      { nombre: "	PAPEL DE SEDA PARAFINADO A CUADROS", bruto: 0.002, limpio: 0, cocido: 0 },
+    ]
+  },
+  {
+    Mercaderia: "Sandw. Burger Mc FERNANDEZ ",
+    Ingredientes: [      
+      
+      { nombre: "MAYONESA", bruto: 0.009, limpio: 0, cocido: 0 },      
+      { nombre: "MEDALLON DE POLLO", bruto: 1, limpio: 0, cocido: 0 },
+      { nombre: "MOSTAZA", bruto: 0.002, limpio: 0, cocido: 0 },      
+      { nombre: "PAN PARA HAMBURGUESAS BIMBO", bruto: 1, limpio: 0, cocido: 0 },
+      { nombre: "PEPINO ENV. CHICO", bruto: 0.008, limpio: 0, cocido: 0 },      
+      { nombre: "CEBOLLA DE VERDEO", bruto: 0.006, limpio: 0, cocido: 0 },
+      { nombre: "QUESO CHEDDAR FETEADO", bruto: 1, limpio: 0, cocido: 0 },
+      { nombre: "REPOLLO BLANCO", bruto: 0.031, limpio: 0, cocido: 0 },
+      { nombre: "TOMATES PERITA", bruto: 0.032, limpio: 0, cocido: 0 },
+      { nombre: "	YOGUR NATURAL X KG", bruto: 0.002, limpio: 0, cocido: 0 },
+      { nombre: "	PAPEL DE SEDA PARAFINADO A CUADROS", bruto: 0.002, limpio: 0, cocido: 0 },
+
+
     ]
   },
  
