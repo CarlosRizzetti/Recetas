@@ -140,5 +140,25 @@ export const recetasSandwiches = [
 
     ]
   },
+  {
+    Mercaderia: "Sandw. Burger Mc ALLISTER  ",
+    Ingredientes: [      
+      
+      { nombre: "HAMBURGUESA 69 GRS", bruto: 1, limpio: 0, cocido: 0 },      
+      { nombre: "BARBACOA", bruto: 0.024, limpio: 0, cocido: 0 },
+      { nombre: "MOSTAZA", bruto: 0.003, limpio: 0, cocido: 0 },      
+      { nombre: "PAN PARA HAMBURGUESAS BIMBO", bruto: 1, limpio: 0, cocido: 0 },
+      { nombre: "ACEITE MEZCLA", bruto: 0.014, limpio: 0, cocido: 0 },      
+      { nombre: "CEBOLLA", bruto: 0.024, limpio: 0, cocido: 0 },
+      { nombre: "QUESO CHEDDAR FETEADO", bruto: 1, limpio: 0, cocido: 0 },
+      { nombre: "CEBOLLA EN ESCAMAS", bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "ESENCIA DE HUMO", bruto: 0.059, limpio: 0, cocido: 0 },
+      { nombre: "HARINA 0000", bruto: 0.007, limpio: 0, cocido: 0 },
+      { nombre: "JAMON COCIDO RECORTES", bruto: 0.015, limpio: 0, cocido: 0 },
+      { nombre: "PAPEL DE SEDA PARAFINADO A CUADROS", bruto: 1, limpio: 0, cocido: 0 },
+
+
+    ]
+  },
  
 ];
